@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" />
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-white"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="#"><img
+                    src="/image/EmboldLabLogo.png"
+                    class="img-fluid img-brand rounded-top"
+                    alt="EmboldLab Logo"
+                />
+                </a>
+                <button
+                    class="navbar-toggler hidden-lg-up"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                ><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html" aria-current="page">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html" aria-current="page">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="message.html" aria-current="page">Message</a>
+                            <span class="visually-hidden">(current)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <header>
+            <h2>Messages</h2>
+            <p>Here are your conversations</p>
+        </header>
+
+        <section class="messages">
+            <div class="message-box">
+                <h4>Instructor: {{instructor}}</h4>
+                <p>Hi {{Student Name}}, just a reminder that your JavaScript Basics assignment is due on Oct 25th.</p>
+                <span class="message-time">Oct 19, 2024 - 10:00 AM</span>
+            </div>
+            <div class="message-box">
+                <h4>Support Team</h4>
+                <p>Your issue regarding course access has been resolved. Let us know if you need further assistance.</p>
+                <span class="message-time">Oct 18, 2024 - 3:30 PM</span>
+            </div>
+            <!-- Add more messages as needed -->
+        </section>
+
+        <section class="send-message">
+            <h3>Send a Message</h3>
+            <form>
+                <label for="recipient">To:</label>
+                <select id="recipient" name="recipient">
+                    <option value="instructor">Instructor</option>
+                    <option value="support">Support Team</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <div class="com">
+        <a href="#">Join Community <i class="fa fa-telegram"></i></a>
+      </div>
+      <footer class="footer">
+        <div class="foot-head">
+          <div class="container">
+            <div class="row">
+              <div class="col-md">
+                <a class="navbar-brand" href="#"><img
+  
+                      src="/image/EmboldLabLogo.png"
+                      class="img-fluid img-brand rounded-top"
+                      alt="EmboldLab Logo"
+                  />
+                  </a>
+              </div>
+              <div class="col-md">
+                &copy; Copyright <script>document.write(new Date().getFullYear());</script> • Embold Lab. All Rights Reserved.
+              </div>
+  
+              <div class="col-md">
+  
+                <a href="#" class="text-dark">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </footer>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/responsive.min.css">
+        <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/image/EmboldLabLogo.png" class="img-fluid img-brand rounded-top" alt="EmboldLab Logo" />
+            </a>
+            <button
+                class="navbar-toggler hidden-lg-up"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <!-- Dropdown for Courses -->
+                    <li class="nav-item courses-section">
+
+                        <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i> Trainig</a>
+
+                        <div class="course-categories">
+                            <!-- Bootcamp -->
+                            <div class="course-category">
+                              <a
+
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="coursesDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Bootcamp
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" >Web Desingn/Development</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Digital Marketing</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Graphics Design</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">UI/UX Product Design</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Data Analysis</a>
+                            </li>
+                        </ul>
+                            </div>
+                            <!-- Accelerator Program -->
+                            <div class="course-category">
+                                 <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="coursesDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Accelerator Program
+                        </a>
+                              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+
+                            <li class="dropdown-submenu">
+
+                                <a class="dropdown-item" >Software Development</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Product Management</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Data Science</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Data Engineering</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Digital Expert</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Creative Designer</a>
+                            </li>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Agile/Scrum & UX Desingn</a>
+                            </li>
+                        </ul>
+                            </div>
+                            <!-- Masterclass -->
+                            <div class="course-category">
+                                 <a
+
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="coursesDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Masterclass
+                        </a>
+                              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" >Front End Engineer</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Back End Engineer</a>
+                                
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Data Science</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">>Business Intelligence Analyst</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Product Developer</a>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">Digital Content Creator</a>
+                            </li>
+                        </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Other Nav Items -->
+                    
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://boldkonnect.com">Telecommunication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ship.html">Drop Shipping</a>
+                    </li>
+                </ul>
+                <button class="btn nav-btn my-2 my-sm-0" onclick="window.location='contact.html'">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+</header>
+      <!--=============================================
+        MAIN CONTACT CONTAINER
+    ====================================================-->
+    <div class="blog-main-container container">
+
+      <!------------Blog main container-------->
+
+        <div class="blog-content">
+            <div class="title">
+                <div class="title-top">
+                    <h6>Blog ></h6>
+                    <h6>Innovation</h6>
+                </div>
+                <h2>Revolutionizing Healthcare: How Wearable Tech Is Transforming
+                    Patient Care</h2>
+                    
+            </div>
+            <div class="title-img">
+                <img class="head2" src="/image/head2.png" alt="">
+            </div>
+
+            <article>
+                <b>Wearable technology is no longer confined to fitness enthusiasts tracking their
+                    steps. Today, wearables like smartwatches, biosensors, and health-monitoring
+                    devices are revolutionizing the healthcare industry. These devices are providing
+                    real-time data that not only improve individual wellness but also enable early
+                    detection of potential health issues, offering a promising future for patient care. </b>
+
+<p>Wearables are becoming critical tools in preventive healthcare. Devices like the Apple Watch and Fitbit, once mainly focused on
+    fitness tracking, now include heart rate monitors, ECG readers, and blood oxygen sensors. These devices can alert users to
+    abnormal readings, prompting early medical intervention before conditions worsen.
+    <br>    <br>
+    
+    
+    Healthcare providers are also leveraging wearables to improve patient outcomes. Remote monitoring allows doctors to track a
+    patient s vitals continuously, even after they leave the hospital. This data driven approach enables more personalized treatment
+    plans, reduces readmission rates, and lowers healthcare costs.
+    <br>    <br>
+    
+    One of the most significant innovations in wearable health tech is biosensors capable of monitoring glucose levels in diabetic
+    patients or detecting heart irregularities in those with cardiovascular issues. The future holds even greater potential as
+    researchers explore wearables that can track everything from hydration levels to mental health markers.
+    <br>    <br>
+    
+    As wearable technology continues to evolve, its integration into the healthcare system will likely deepen. With the rise of AI and
+    machine learning, wearables will become smarter, offering predictive analytics that can foresee health crises before they occur.
+    The convergence of tech and medicine is changing how we approach healthcare, making it more proactive, personalized, and
+    accessible.</p>
+
+            </article>
+
+        </div>
+      <!------------Blog main container-------->
+<hr>
+      <div class="container content-space-2  blog-post">
+        <div class="row row-cols-1 row-cols-sm-2  blog-post-body">
+            <div class="h-100  blog-post-card">
+              <div class="card-pinned">
+                <img src="image/post.png" class="img-fluid rounded-top" alt=""/>
+              </div>
+              <div class="card-body">
+                <div class="card-head">
+                    <span>John Smash</span>
+                    
+                  </div>
+                  <h4 class="card-title">
+                    DIGITAL / CONTENT MARKETING
+                  </h4>
+                  <p>Whether you are a beginner looking to break into the field or a professional seeking to upgrade your skills, our boot…</p>
+              <span>1:13 PM GMT+1</span>
+              </div>
+            </div>
+            <div class="h-100  blog-post-card">
+              <div class="card-pinned">
+                <img src="image/post.png" class="img-fluid rounded-top" alt=""/>
+              </div>
+              <div class="card-body">
+                <div class="card-head">
+                    <span>John Smash</span>
+                    
+                  </div>
+                  <h4 class="card-title">
+                    DIGITAL / CONTENT MARKETING
+                  </h4>
+                  <p>Whether you are a beginner looking to break into the field or a professional seeking to upgrade your skills, our boot…</p>
+                <span>1:13 PM GMT+1</span>
+              </div>
+            </div>
+            <div class="h-100  blog-post-card">
+              <div class="card-pinned">
+                <img src="image/post.png" class="img-fluid rounded-top" alt=""/>
+              </div>
+              <div class="card-body">
+                  <div class="card-head">
+                    <span>John Smash</span>
+                    
+                  </div>
+                  <h4 class="card-title">
+                    DIGITAL / CONTENT MARKETING
+                  </h4>
+                  <p>Whether you are a beginner looking to break into the field or a professional seeking to upgrade your skills, our boot…</p>
+                <span>1:13 PM GMT+1</span>
+              </div>
+            </div>
+            <div class="h-100  blog-post-card">
+              <div class="card-pinned">
+                <img src="image/post.png" class="img-fluid rounded-top" alt=""/>
+              </div>
+              <div class="card-body">
+                <div class="card-head">
+                    <span>John Smash</span>
+                    
+                  </div>
+                  <h4 class="card-title">
+                    DIGITAL / CONTENT MARKETING
+                  </h4>
+                  <p>Whether you are a beginner looking to break into the field or a professional seeking to upgrade your skills, our boot…</p>
+                  <span>1:13 PM GMT+1</span>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
+        <div class="blog-stay-connected container">
+            <div class="blog-stay-connect-top">
+                <h2>Sign Up to Our NewsLetter</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. </p>
+            </div>
+            <div class="blog-stay-connect-bottom">
+                    <div class="left">
+                        <h2>Stay in the loop</h2>
+                        <p>Subscribe to receive the latest Tech news and updates.
+                        We promise not to spam you!  </p>
+                    </div>
+                    <div class="right">
+                        <form action="#" method="post">
+                            <input type="email" name="fEmail" id="fEmail" placeholder="Enter email address">
+                            <input type="submit" value="continue">
+                        </form>
+                    </div>
+            </div>
+
+        </div>
+      <!--=============================================
+        MAIN CONTACT CONTAINER
+    ====================================================-->
+    </div>
+
+    <footer class="footer-section">
+        <div class="footer-head">
+          <div class="logo">
+            <img src="/image/EmboldLabLogo.png" class="img-fluid img-brand rounded-top" alt="EmboldLab Logo"/>
+          </div>
+            <div class="menu">
+              <a href="about.html">About</a>
+              <a href="https://boldkonnect.com">Telecommunication</a>
+              <a href="ship.html">Dropshipping</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          <div>
+            <div class="connect">
+              <span>Stay Connected</span>
+             <div>
+              <i class="fa fa-facebook-f" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-foot">
+          <div class="con">
+              <div><i class="fa fa-envelope" aria-hidden="true"></i>hello@emboldlab.com</div>
+              <div><i class="fa fa-phone" aria-hidden="true"></i>+9191813232309</div>
+              <div><i class="fa fa-map-marker" aria-hidden="true"></i>Lagos</div>
+          </div>
+          <div class="copy">
+              <div><span>&copy;</span><span><script>document.write(new Date().getFullYear());</script></span> Embold Lab Alrights reserved.</div>
+              
+          </div>
+        </div>
+    </footer>
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+></script>
+
+
+</body>
+</html>

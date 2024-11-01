@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/image/EmboldLabLogo.png" class="img-fluid img-brand rounded-top" alt="EmboldLab Logo"/></a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="profile.html" aria-current="page">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="message.html" aria-current="page">Message</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-content">
+        <header>
+            <h2>Welcome, {{Student Name}}</h2>
+            <p>Here's an overview of your learning journey</p>
+        </header>
+
+        <section class="courses">
+            <h3>My Courses</h3>
+            <div class="course-box">
+                <h4>Web Development Bootcamp</h4>
+                
+                <div class="pro-container">
+                  <div class="progress-circle" id="progress-circle">
+
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="circle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    </svg>
+                    <div class="progress-text">
+                        <p id="progress-percentage">0%</p>
+                    </div>
+                </div>
+                <button class="upbtn" onclick="updateProgress(7)">Update Week</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="assignments">
+            <h3>Upcoming Assignments</h3>
+            <ul>
+                <li>JavaScript Basics - Due: Oct 25th</li>
+                <li>Bootstrap Basics - Due: Oct 30th</li>
+            </ul>
+        </section>
+
+        <section class="progress-report">
+            <h3>My Certificate</h3>
+            <p>Your certificate will be ready after your course completion</p>
+            <button id="download-btn" class="disabled-btn" disabled onclick="alert('Certificate Downloaded')">Download Certificate</button>
+        </section>
+    </div>
+    <div class="com">
+      <a href="#">Join Community <i class="fa fa-telegram"></i></a>
+    </div>
+    <footer class="footer">
+      <div class="foot-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <a class="navbar-brand" href="#"><img src="/image/EmboldLabLogo.png" class="img-fluid img-brand rounded-top" alt="EmboldLab Logo"/></a>
+            </div>
+            <div class="col-md">
+              &copy; Copyright <script>document.write(new Date().getFullYear());</script> • Embold Lab. All Rights Reserved.
+            </div>
+            <div class="col-md">
+              <a href="#" class="text-dark">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot-social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+    </footer>
+
+    <script>
+      function updateProgress(weeksCompleted) {
+          const totalWeeks = 8;
+          const progressPercentage = (weeksCompleted / totalWeeks) * 100;
+
+          // Update progress text
+          document.getElementById('progress-percentage').textContent = `${progressPercentage}%`;
+
+
+          const circle = document.querySelector('.circle');
+          const radius = 15.9155; 
+          const circumference = 2 * Math.PI * radius;
+          const offset = circumference - (progressPercentage / 100) * circumference;
+          circle.style.strokeDashoffset = offset;
+
+
+          const downloadBtn = document.getElementById('download-btn');
+          if (progressPercentage === 100) {
+              downloadBtn.disabled = false;
+              downloadBtn.classList.remove('disabled-btn');
+              downloadBtn.classList.add('enabled-btn');
+          }
+      }
+
+      document.querySelector('.circle').style.strokeDasharray = `${2 * Math.PI * 15.9155}`;
+      document.querySelector('.circle').style.strokeDashoffset = `${2 * Math.PI * 15.9155}`;
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
