@@ -63,8 +63,15 @@
                         <p id="progress-percentage">0%</p>
                     </div>
                 </div>
-                <button class="upbtn" onclick="updateProgress(7)">Update Week</button>
                 </div>
+                <a
+                    name=""
+                    id=""
+                    class="btn btn-primary"
+                    href="#"
+                    role="button"
+                    >Download your Class Training Calendar </a
+                >
                 
             </div>
         </section>
@@ -111,11 +118,11 @@
     </footer>
 
     <script>
-      function updateProgress(weeksCompleted) {
+      document.addEventListener("DOMContentLoaded", ()=>{
+        function updateProgress(weeksCompleted) {
           const totalWeeks = 8;
           const progressPercentage = (weeksCompleted / totalWeeks) * 100;
 
-          // Update progress text
           document.getElementById('progress-percentage').textContent = `${progressPercentage}%`;
 
 
@@ -136,6 +143,8 @@
 
       document.querySelector('.circle').style.strokeDasharray = `${2 * Math.PI * 15.9155}`;
       document.querySelector('.circle').style.strokeDashoffset = `${2 * Math.PI * 15.9155}`;
+      updateProgress(7);
+      });
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
